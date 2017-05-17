@@ -1,0 +1,23 @@
+indexer  --config sphinx.conf  rt_main --rotate   #增量索引
+
+
+
+indexer  --config sphinx.conf  main --rotate      #全部索引
+
+indexer  --config sphinx.conf  rt_main --all      #全部索引
+
+
+
+
+
+
+
+
+searchd  --config sphinx.conf    #启动
+
+
+
+searchd  --config sphinx.conf  --stop   #停止
+
+
+
